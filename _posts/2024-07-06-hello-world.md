@@ -7,5 +7,5 @@ tags: [Hello World]
 
 # Hello World
 
-Hello World this is my personal blog. Sedefnur
+Hello World this is my personal blog. 
 
