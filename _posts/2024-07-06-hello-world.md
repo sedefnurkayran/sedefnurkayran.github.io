@@ -7,5 +7,9 @@ tags: [Hello World]
 
 # Hello World
 
-Hello World this is my personal blog. Sedefnur
 
+<h4 class=" text-align: justify;" 
+
+Welcome to my personal blog. As an industrial engineer, I share the notes I have taken from the trainings I have attended with you in this blog. My aim is to summarize what I have learned and keep notes for myself. Also, I hope my posts will be useful for you too.
+
+</h4>
