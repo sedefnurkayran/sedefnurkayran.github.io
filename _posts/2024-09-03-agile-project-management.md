@@ -6,9 +6,9 @@ categories: [Agile Metodology]
 tags: [Agile Metodology]
 ---
 
-# Agile Metodology
-
-What is Agile?
+<!-- # Agile Metodology -->
+<div class="text-align: justify">
+<p> What is Agile?
 
 Agile, as the name suggests, is an approach based on being agile, reacting quickly and adapting to change. Agile principles are rooted in the principles of Lean manufacturing, first introduced by Toyota in the 1950s, and these principles are especially important in software development processes.
 
@@ -59,4 +59,5 @@ SCRUM has regular rituals:
 
 Contributions of Agile in Business
 
-Agile has revolutionized the business world. This approach increases the flexibility of teams, prioritizes customer satisfaction and accelerates product development processes. Quickly adapting to changes in projects and continuously creating value is one of Agile's greatest strengths. This structure of Agile is one of its main features that minimizes risk in projects while increasing customer satisfaction.
+Agile has revolutionized the business world. This approach increases the flexibility of teams, prioritizes customer satisfaction and accelerates product development processes. Quickly adapting to changes in projects and continuously creating value is one of Agile's greatest strengths. This structure of Agile is one of its main features that minimizes risk in projects while increasing customer satisfaction.</p>
+</div>
