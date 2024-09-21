@@ -10,7 +10,7 @@ I've published a article describes Digital Twin creation and use in scheduling f
 
 I share the notes I have taken from the trainings I have attended with you in this blog. My aim is to summarize what I have learned and keep notes for myself. Also, I hope my posts will be useful for you too.
 
-(/assets/img/personal/sedef_petra.jpeg) 
+<!-- (/assets/img/personal/sedef_petra.jpeg)  -->
 
  <!-- <img src="~/assets/img/personal/sedef_petra.jpeg"> -->
 
