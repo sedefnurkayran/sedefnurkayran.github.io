@@ -16,7 +16,7 @@ timezone:
 
 title: Sedefnur Kayran # the main title
 
-tagline: My Personal Blog # it will display as the sub-title
+tagline: Industrial Engineer # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   blog, sedefnur, github
@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://sedefnurkayran.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: https://github.com/sedefnurkayran # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -96,7 +96,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.midjourney.com/5094d73a-ac80-4979-9737-a5e2bc0e9e4b/0_1.png
+avatar: /assets/img/personal/sedef_petra.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
