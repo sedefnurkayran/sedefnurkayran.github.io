@@ -10,7 +10,7 @@ tags: [Agile Metodology]
 <div class="text-align: justify">
 What is Agile?
 
-<p>Agile, as the name suggests, is an approach based on being agile, reacting quickly and adapting to change. Agile principles are rooted in the principles of Lean manufacturing, first introduced by Toyota in the 1950s, and these principles are especially important in software development processes.</p>
+<p class="text-align:justify">Agile, as the name suggests, is an approach based on being agile, reacting quickly and adapting to change. Agile principles are rooted in the principles of Lean manufacturing, first introduced by Toyota in the 1950s, and these principles are especially important in software development processes.</p>
 
 The Difference between Traditional Project Management and Agile Project Management
 
