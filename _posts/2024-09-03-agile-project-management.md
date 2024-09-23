@@ -4,6 +4,7 @@ title: "Agile Project Management"
 date: 2024-09-03 00:00:00+0800
 categories: [Agile Metodology]
 tags: [Agile Metodology]
+author: kayran
 ---
 
 <!-- # Agile Metodology -->
