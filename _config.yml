@@ -98,8 +98,8 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 
-author:
-  avatar           : "/assets/personal/sedefnurkayran.png"
+.author__avatar :
+  avatar: "/assets/personal/sedefnurkayran.png"
 
  
 
