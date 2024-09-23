@@ -118,7 +118,7 @@
      ========================================================================== */
   
   .author__avatar {
-    min-width: 80em;
+    min-width: 20em;
     display: table-cell;
     vertical-align: top;
     width: 36px;
@@ -131,7 +131,7 @@
     }
   
     img {
-      max-width: 110px;
+      max-width: 150px; //110du
       border-radius: 50%;
   
       @include breakpoint($large) {
