@@ -98,7 +98,9 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 
-author:
+
+
+# author:
   avatar: /assets/personal/sedefnurkayran.png
 
  
