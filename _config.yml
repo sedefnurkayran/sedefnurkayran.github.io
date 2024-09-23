@@ -99,11 +99,9 @@ cdn:
 # the avatar on sidebar, support local or CORS resources
 
 author:
-  name             : "Sedefnur Kayran"
   avatar           : "/assets/personal/sedefnurkayran.png"
-  bio              : ""
-  location         : "Munich, Germany"
-  email            : "sedefnurdemirr@gmail.com"
+
+ 
 
 # avatar: /assets/personal/sedefnurkayran.png 
 
