@@ -102,11 +102,8 @@ cdn:
 
 # author:
 
-  # avatar: /assets/personal/sedefnurkayran.png
+ avatar: /assets/personal/sedefnurkayran.png
 
-<div class="sidebar-avatar">
-    <img src="/assets/personal/sedefnurkayran.png" alt="Sedef's Avatar">
-</div>
 
  
 
