@@ -8,7 +8,7 @@ author: kayran
 ---
 
 ### Project Introduction 
-{: data-toc-skip='' .mt-4 .mb-0 }
+
 
 In this project, a blog site was developed using the ASP.NET Core Web template. The main purpose of the project is to create a platform with user login and logout, where you can create and share blog posts and add comments. The blog site was created with the Web template instead of the MVC structure and database management was done using Entity Framework Core (EF Core). Since the web template was used, view files had to be added manually after the controller was created. Therefore, before the build process in Program.cs file, builder.Services AddControllersWithViews(); statement was added to make the controller and view structures ready for use in the project. In the project creation phase, the following command was used with the .NET command line tool:
 ```c#
@@ -20,7 +20,7 @@ With this command, an ASP.NET Core web application named BlogApp was created.
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 #### ASP.NET Core Project Setup 
-{: data-toc-skip='' .mt-4 }
+
 
 After creating the project, the database infrastructure was prepared as the first step. In this process, Entity structures (table representations) of the database were created using EF Core and relationships between tables were defined. This relationship structure allows EF Core to understand which classes represent the tables in the database.
 ```c#
@@ -85,9 +85,10 @@ The project uses Bootstrap for visualization and page layout. The following step
 dotnet tool install Microsoft.web.librarymanager.cli -g
 libman init -p cdnjs
 libman install bootstrap@5.3.3 -d wwwroot/lib/bootstrap
-colored tags are displayed on the detail page. This gives users a more visually meaningful experience.
 ```
-To make Bootstrap and other static files available, app.UseStaticFiles(); has been added to Program.cs. This allows static files (CSS, JS, img, etc.) in the project to be used by the server. In this way, Bootstrap features can be included and used in the project.
+colored tags are displayed on the detail page. This gives users a more visually meaningful experience.
+
+To make Bootstrap and other static files available, ```app.UseStaticFiles();``` has been added to Program.cs. This allows static files (CSS, JS, img, etc.) in the project to be used by the server. In this way, Bootstrap features can be included and used in the project.
 
 ### Blog Functionality and Using ViewComponents
 {: data-toc-skip='' .mt-4 .mb-0 }
@@ -107,8 +108,9 @@ app.MapControllerRoute(
 Also, the defined pattern is used in links with the href attribute. The correct definition of patterns in the href is necessary to redirect users to the relevant post or tag page.
 A similar URL redirection was done for tags and a page was created listing the blog posts belonging to each tag. In this way, users can access the blog posts belonging to that tag by clicking on the tags.
 In the project, TinyMCE editor was integrated to enable users to create and edit blog posts. TinyMCE allows the user to create content in HTML format as a rich text editor (WYSIWYG). In order to provide this integration, TinyMCE's CDN connection was included in the project:
+
 ```c#
-<script src=“https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js” referrerpolicy=“origin”></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 ```
 Then, the relevant field is selected using the init function to initialize TinyMCE:
 ```c#
@@ -116,28 +118,20 @@ tinymce.init({
   selector: '#contentArea' // Area used for blog content
 });
 ```
-With this action, the rich text editor is enabled in the designated area. Through this editor, the user can create blog posts in HTML format. In order to render the content written with HTML tags correctly, this content has been edited on the view side with the @Html.Raw(@model.Content) statement. In this way, user-generated content is displayed securely and HTML tags are included in the content.
+With this action, the rich text editor is enabled in the designated area. Through this editor, the user can create blog posts in HTML format. In order to render the content written with HTML tags correctly, this content has been edited on the view side with the ```@Html.Raw(@model.Content)``` statement. In this way, user-generated content is displayed securely and HTML tags are included in the content.
 This integration has enabled the blog content to be organized in a more flexible and user-friendly way.
 
 ### Enum and Color Assignments
 {: data-toc-skip='' .mt-4 .mb-0 }
-
-
 In the project, different colors are assigned for tags added to blog posts. For this purpose, a color is assigned to each tag using Enum structure and these colors are displayed on the detail page. This provides users with a more visually meaningful experience.
 
 
 ### Adding Comments and Using AJAX
 {: data-toc-skip='' .mt-4 .mb-0 }
+On the detail page of blog posts, users can add comments. AJAX was used to prevent refreshing the page while adding comments. Instead of scrolling to the bottom of the page after commenting, the new comment is immediately visible on the page. This feature was achieved by pulling data through JSON files and the comment field was organized using jQuery. In addition, ```@RenderSection(“Scripts”, required: false)``` was added to layout.cshtml to run JavaScript codes on the relevant pages.
 
-
-
-
-
-On the detail page of blog posts, users can add comments. AJAX was used to prevent refreshing the page while adding comments. Instead of scrolling to the bottom of the page after commenting, the new comment is immediately visible on the page. This feature was achieved by pulling data through JSON files and the comment field was organized using jQuery. In addition, @RenderSection(“Scripts”, required: false) was added to layout.cshtml to run JavaScript codes on the relevant pages.
-
-### User Login and Registration Procedures
+### User Login and Registration Procedures 
 {: data-toc-skip='' .mt-4 .mb-0 }
-
 
 Within the scope of the project, Login and Register pages were created for users to log in to the site. Cookie Authentication was used for login. This method provides a secure login by storing the user's credentials on the server. 
 
@@ -145,7 +139,7 @@ Session management was used to manage the login and logout processes of the user
 ```c#
 @if (!User.Identity!.IsAuthenticated)
 {
-    <a href=“/user/login”>Login</a>
+    <a href="/user/login”>Login"</a>
 }
 ```
 During the registration process, the user was prompted for the Confirm Password field and this field was used to check whether the password entered by the user was correct. The Compare feature was used to compare the password and password verification fields.
