@@ -5,7 +5,7 @@ date: 2024-09-03 00:00:00+0800
 categories: [Agile Metodology]
 tags: [Agile Metodology]
 author: kayran
-description: This article is based on the notes I took during the Agile Workshop.
+description: This article is based on the notes I took during the Agile Workshop. It explains the basics of Agile Project Management.
 ---
 
 <!-- # Agile Metodology -->
