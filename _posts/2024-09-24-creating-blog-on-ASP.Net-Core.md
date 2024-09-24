@@ -1,22 +1,24 @@
 ---
 layout: post
 title: "A Step-by-Step Guide to Creating a Blog on ASP.NET Core"
-date: 2024-09-03 00:00:00+0800
+date: 2024-09-24 00:00:00+0800
 categories: [ASP.NET Core]
 tags: [ASP.NET Core]
 author: kayran
 ---
 
-Project Introduction
+Project Introduction {: data-toc-skip='' .mt-4 .mb-0 }
 
-In this project, a blog site was developed using the ASP.NET Core Web template. The main purpose of the project is to create a platform with user login and logout, where you can create and share blog posts and add comments. The blog site was created with the Web template instead of the MVC structure and database management was done using Entity Framework Core (EF Core). Since the web template was used, view files had to be added manually after the controller was created. Therefore, before the build process in Program.cs file, builder.Services.AddControllersWithViews(); statement was added to make the controller and view structures ready for use in the project.
-In the project creation phase, the following command was used with the .NET command line tool:
+In this project, a blog site was developed using the ASP.NET Core Web template. The main purpose of the project is to create a platform with user login and logout, where you can create and share blog posts and add comments. The blog site was created with the Web template instead of the MVC structure and database management was done using Entity Framework Core (EF Core). Since the web template was used, view files had to be added manually after the controller was created. Therefore, before the build process in Program.cs file, builder.Services AddControllersWithViews(); statement was added to make the controller and view structures ready for use in the project. In the project creation phase, the following command was used with the .NET command line tool:
+
 dotnet new web -o BlogApp -f net8.0
+
 With this command, an ASP.NET Core web application named BlogApp was created.
 
-Project Creation and Structuring
+Project Creation and Structuring {: data-toc-skip='' .mt-4 .mb-0 }
 
-ASP.NET Core Project Setup
+ASP.NET Core Project Setup {: data-toc-skip='' .mt-4 .mb-0 }
+
 After creating the project, the database infrastructure was prepared as the first step. In this process, Entity structures (table representations) of the database were created using EF Core and relationships between tables were defined. This relationship structure allows EF Core to understand which classes represent the tables in the database.
 
 public class BlogContext : DbContext
@@ -28,9 +30,8 @@ public class BlogContext : DbContext
 Also, the required database connection string has been added to the appsettings.Development.json file.
 
 Seed Data Usage
-After the database is created, SeedData is added, which refers to sample data predefined in the database. SeedData adds data to the database before running the project. It is important that this data is organized according to the relationships between the tables.
-When SeedData is updated and applied to the project again:
-First the existing database is deleted with the following command:
+
+After the database is created, SeedData is added, which refers to sample data predefined in the database. SeedData adds data to the database before running the project. It is important that this data is organized according to the relationships between the tables. When SeedData is updated and applied to the project again. First the existing database is deleted with the following command:
 
 dotnet ef database drop --force --context BlogContext
 
@@ -44,7 +45,6 @@ Concrete: This folder contains the classes that we connect the interfaces to EF 
 
 In the project, it is not a safe approach to use the BlogContext class directly, because it provides access not only to the required Post data, but also to other database entities such as _context.Tag or _context.User. Since this is undesirable, separate interfaces are defined for each table or entity to create a more secure and modular structure. In this way, only the needed data is accessed and database management is made more secure. For example, the IPostRepository interface manages only post data, while other entities are abstracted from this structure.
 For example, an IPostRepository interface and the EfPostRepository class that implements this interface are defined as follows:
-
 
 public interface IPostRepository
 {
