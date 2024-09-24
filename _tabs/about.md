@@ -10,9 +10,8 @@ I've published a article describes [Digital Twin creation and use in scheduling 
 
 I share the notes I have taken from the trainings I have attended with you in this blog. My aim is to summarize what I have learned and keep notes for myself. Also, I hope my posts will be useful for you too.
 
- ![sedefnurkayran](/assets/img/personal/sedefnurkayran.png)
-<!-- _Me at the Petra,Jordan [Petra](https://tr.wikipedia.org/wiki/Petra)_ -->
-
+ ![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: w="700" h="400" }
+ _Me at the Petra,Jordan [Petra](https://tr.wikipedia.org/wiki/Petra)_ 
 <!-- (/assets/img/personal/sedef_petra.jpeg)  -->
 
  <!-- <img src="~/assets/img/personal/sedef_petra.jpeg"> -->
