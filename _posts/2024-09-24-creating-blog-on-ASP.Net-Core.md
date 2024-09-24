@@ -7,7 +7,9 @@ tags: [ASP.NET Core]
 author: kayran
 ---
 
-Project Introduction {: data-toc-skip='' .mt-4 .mb-0 }
+
+## Project Introduction 
+{: data-toc-skip='' .mt-4 .mb-0 }
 
 In this project, a blog site was developed using the ASP.NET Core Web template. The main purpose of the project is to create a platform with user login and logout, where you can create and share blog posts and add comments. The blog site was created with the Web template instead of the MVC structure and database management was done using Entity Framework Core (EF Core). Since the web template was used, view files had to be added manually after the controller was created. Therefore, before the build process in Program.cs file, builder.Services AddControllersWithViews(); statement was added to make the controller and view structures ready for use in the project. In the project creation phase, the following command was used with the .NET command line tool:
 
@@ -15,9 +17,10 @@ dotnet new web -o BlogApp -f net8.0
 
 With this command, an ASP.NET Core web application named BlogApp was created.
 
-Project Creation and Structuring {: data-toc-skip='' .mt-4 .mb-0 }
-
-ASP.NET Core Project Setup {: data-toc-skip='' .mt-4 .mb-0 }
+## Project Creation and Structuring 
+{: data-toc-skip='' .mt-4 .mb-0 }
+### ASP.NET Core Project Setup 
+{: data-toc-skip='' .mt-4 .mb-0 }
 
 After creating the project, the database infrastructure was prepared as the first step. In this process, Entity structures (table representations) of the database were created using EF Core and relationships between tables were defined. This relationship structure allows EF Core to understand which classes represent the tables in the database.
 
