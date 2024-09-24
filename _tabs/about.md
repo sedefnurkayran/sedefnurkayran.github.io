@@ -15,7 +15,7 @@ _Me at the Petra, Jordan [Petra](https://tr.wikipedia.org/wiki/Petra)_ -->
 
 
 ![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: width="972" height="589" }
-_Full screen width and center alignment_
+<!-- _Full screen width and center alignment_ -->
 
 
 
