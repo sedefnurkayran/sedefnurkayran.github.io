@@ -16,6 +16,6 @@ _Me at the Petra, Jordan [Petra](https://tr.wikipedia.org/wiki/Petra)_ -->
 <!-- <img src="/assets/img/personal/sedefnurkayran.png" alt="sedefnurkayran" width="972" height="589"> -->
 
 
-![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: w="700" h="400" }
+<!-- ![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: w="700" h="400" } -->
 
 I’m best reached through [LinkedIn](https://www.linkedin.com/in/sedefnurkayran/). I’m always open to interesting conversations and collaboration. 
