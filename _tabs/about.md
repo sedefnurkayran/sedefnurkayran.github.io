@@ -13,10 +13,7 @@ I share the notes I have taken from the trainings I have attended with you in th
 <!-- ![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: width="700" height="400" }
 _Me at the Petra, Jordan [Petra](https://tr.wikipedia.org/wiki/Petra)_ -->
 
-
-![sedefnurkayran](/assets/img/personal/sedefnurkayran.png){: w="700" h="400" }
-_Me at the top of [Mount Moses](https://en.wikipedia.org/wiki/Mount_Sinai), Sinai, Egypt_
-
+<img src="/assets/img/personal/sedefnurkayran.png" alt="sedefnurkayran" width="972" height="589">
 
 
 I’m best reached through [LinkedIn](https://www.linkedin.com/in/sedefnurkayran/). I’m always open to interesting conversations and collaboration. 
