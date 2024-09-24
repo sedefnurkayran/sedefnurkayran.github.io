@@ -94,10 +94,9 @@ To make Bootstrap and other static files available, ```app.UseStaticFiles();``` 
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 
-Blog posts and tag information are managed with PostViewModel in the project. This model allows the post and tag information to be displayed at the same time. In addition, the ViewComponent structure is used to make some parts of the blog page reusable. 
-For example, ```c# vc:tags-menu</vc> and vc:new-posts</vc>``` components are defined to display the tag menu and new blog posts. These structures can be called from any page to display dynamic content.
+## Blog posts and tag information are managed with PostViewModel in the project. This model allows the post and tag information to be displayed at the same time. In addition, the ViewComponent structure is used to make some parts of the blog page reusable. For example, ```vc:tags-menu</vc> and vc:new-posts</vc>``` components are defined to display the tag menu and new blog posts. These structures can be called from any page to display dynamic content.
 
-In the project, URL name redirection has been done in order to correctly redirect users to the lists of blog posts and tags. For this process, a custom route is defined using MapControllerRoute in Program.cs file. Instead of MapDefault, a route is configured as follows:
+## In the project, URL name redirection has been done in order to correctly redirect users to the lists of blog posts and tags. For this process, a custom route is defined using MapControllerRoute in Program.cs file. Instead of MapDefault, a route is configured as follows:
 ```c#
 app.MapControllerRoute(
     name: "posts_details",
@@ -123,7 +122,7 @@ This integration has enabled the blog content to be organized in a more flexible
 
 ### Enum and Color Assignments
 {: data-toc-skip='' .mt-4 .mb-0 }
-In the project, different colors are assigned for tags added to blog posts. For this purpose, a color is assigned to each tag using Enum structure and these colors are displayed on the detail page. This provides users with a more visually meaningful experience.
+## In the project, different colors are assigned for tags added to blog posts. For this purpose, a color is assigned to each tag using Enum structure and these colors are displayed on the detail page. This provides users with a more visually meaningful experience.
 
 
 ### Adding Comments and Using AJAX
